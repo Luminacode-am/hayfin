@@ -1,13 +1,8 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
+clone անելուց հետո տերմինալում սկզբից գրել,
+### `npm install`\
+այս հրամանը կներբեռնի բոլոր անհրաժեշտ գրադարանները
 ### `npm start`
-
+Սա կաշխատացնի ձեր կայքը ներքում նշված հասցեում
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
