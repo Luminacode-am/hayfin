@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import React, { HtmlHTMLAttributes } from 'react'
+import { Button } from '@headlessui/react'
 
 type ButtonVariant = 'filled' | 'outlined' | 'text'
 type ButtonColor = 'primary' | 'secondary' | 'danger'
@@ -12,7 +13,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     isFullWidth?: boolean
 }
 
-const Button: React.FC<ButtonProps> = ({
+const ButtonStyled: React.FC<ButtonProps> = ({
     children,
     variant = 'filled',
     color = 'primary',
@@ -51,7 +52,7 @@ const Button: React.FC<ButtonProps> = ({
         const disabledStyles = 'opacity-60 cursor-not-allowed'
 
     return (
-        <button
+        <Button
             className={
                 clsx(baseStyles,
                      colorStyles[variant][color],
@@ -67,9 +68,9 @@ const Button: React.FC<ButtonProps> = ({
             {...props}
         >
             {children}
-        </button>
+        </Button>
     )
 }
 
 
-export default Button
+export default ButtonStyled
