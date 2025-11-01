@@ -6,7 +6,7 @@ return (
     <img 
         className="w-18 h-16 shadow-xl rounded-md"
         alt="logo" 
-        src='https://www.vectorlogo.zone/logos/apple/apple-tile.svg'/>
+        src='favicon.ico'/>
         <a href="#" className='flex items-center text-teal-400' >Sign in/ Sign Up</a>
     </header>
 )
