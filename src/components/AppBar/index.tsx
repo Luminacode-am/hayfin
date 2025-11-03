@@ -2,12 +2,17 @@ import React from  'react'
 
 const AppBar: React.FC = () => {
 return (
-    <header className='border-b shadow flex'>   
+    <header className="max-w-6xl m-auto flex items-center justify-between p-4  shadow-2xl">
+    <div  className="flex items-center gap-2">
     <img 
-        className="w-18 h-16 shadow-xl rounded-md"
+     className="w-16 h-16 rounded-md"
         alt="logo" 
-        src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/2048px-LEGO_logo.svg.png'/>
-        Sign in/ Signup
+        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT169r0eMQkJ9L7KUrkeh0AmElAU6pxkHCF2w&s'/>
+        <h1 className="text-2xl font-bold text-yellow-950">HAYFIN</h1>
+        </div>
+        <a href="#" className="text-gray-700 font-medium">
+        Sign in / Signup
+      </a>
     </header>
 )
 }
