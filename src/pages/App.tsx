@@ -1,9 +1,8 @@
 import React from 'react';
-import './App.css';
-import AppBar from '../components/AppBar';
+import './Footer'
 import Footer from '../components/Footer';
 
-function App() {
+function Footer() {
   return (
     <div className="">
       <Footer/>
@@ -11,5 +10,5 @@ function App() {
   );
 }
 
-export default App;
+export default Footer;
 
