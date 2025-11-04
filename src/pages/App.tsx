@@ -1,14 +1,14 @@
 import React from 'react';
-import './App.css';
-import AppBar from '../components/AppBar';
+import './Footer'
+import Footer from '../components/Footer';
 
-function App() {
+function Footer() {
   return (
     <div className="">
-      <AppBar/>
+      <Footer/>
   </div>
   );
 }
 
-export default App;
+export default Footer;
 
