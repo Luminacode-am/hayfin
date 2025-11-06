@@ -1,11 +1,10 @@
 import React from 'react';
-import './Footer'
-import Footer from '../components/Footer';
+import AppBar from '../components/AppBar';
 
 function Footer() {
   return (
     <div className="">
-      <Footer/>
+      <AppBar/>
   </div>
   );
 }
