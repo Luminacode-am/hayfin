@@ -1,13 +1,14 @@
 import React from  'react'
+import logo from './HayfinLogo.jpg'
 
 const AppBar: React.FC = () => {
 return (
-    <header className='border-b shadow flex'>   
-    <img 
+    <header className="flex justify-between items-center p-5">
+        <img 
         className="w-18 h-16 shadow-xl rounded-md"
-        alt="lo" 
-        src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/2048px-LEGO_logo.svg.png'/>
-        Sign in/ Signup
+        alt="logo" 
+        src={logo} />
+        <a href="#" className="text-gray-700 text-sm">Sign In / Sign Up</a>
     </header>
 )
 }
