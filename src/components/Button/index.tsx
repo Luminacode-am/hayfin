@@ -27,19 +27,19 @@ const ButtonStyled: React.FC<ButtonProps> = ({
     const baseStyles = 'inline-flex items-center justify-center rounded-md font-medium'
     const colorStyles : Record<ButtonVariant, Record<ButtonColor, string>> = {
         filled: {
-            primary: 'bg-blue-600 text-white hover:bg-blue-700',
-            secondary: 'bg-gray-600 text-white hover:bg-gray-700',
-            danger: 'bg-red-600 text-white hover:bg-red-700',
+            primary: 'bg-[#1b7a6e] text-white hover:bg-[#166359]',
+            secondary: 'bg-[#4ba99a] text-white hover:bg-[#1b7a6e] ',
+            danger: 'bg-[#a2d8ce] text-[#0e3f38] hover:bg-[#4ba99a]',
         },
         outlined: {
-            primary: 'border border-blue-600 text-blue-600 hover:text-blue-700',
-            secondary: 'border border-gray-600 text-gray-600 hover:bg-gray-700',
-            danger: 'border border-red-600 text-red-600 hover:bg-red-700',
+            primary:'border border-[#1b7a6e] text-[#1b7a6e] hover:bg-[#a2d8ce]',
+            secondary:  'border border-[#4ba99a] text-[#4ba99a] hover:bg-[#d2f0ea]',
+            danger: 'border border-[#0e3f38] text-[#0e3f38] hover:bg-[#4ba99a] h]',
         },
         text: {
-            primary: 'text-blue-600 hover:bg-blue-700',
-            secondary: 'text-gray-600 hover:bg-gray-700',
-            danger: 'text-red-600 hover:bg-red-700',
+            primary: 'text-[#1b7a6e] hover:bg-[#a2d8ce]  ',
+            secondary:'text-[#4ba99a] hover:bg-[#d2f0ea] ',
+            danger: 'text-[#0e3f38] hover:bg-[#a2d8ce] ',
         }
     }
 
