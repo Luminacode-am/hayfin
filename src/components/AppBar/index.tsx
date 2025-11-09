@@ -22,12 +22,11 @@
 
 
 
-
-  import Button from "../Button"
+ import Button from "../Button"
 
 export default function Example(){
   return(
-    <div className="flex flex-direction-row">
+    <div className="flex flex-row gap-4 flex-wrap">
       <Button>
         Test Button
       </Button>
