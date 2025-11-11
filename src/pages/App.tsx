@@ -1,14 +1,14 @@
 import React from 'react';
-import './Footer'
-import Footer from '../components/Footer';
+import './Pages404'
+import Pages404 from '../components/Pages404';
 
 function App() {
   return (
     <div className="">
-      <Footer/>
+      <Pages404/>
   </div>
   );
 }
 
-export default Footer;
+export default Pages404;
 
