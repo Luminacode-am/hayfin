@@ -7,7 +7,7 @@ export default function Hero() {
             Welcome to HAYFIN ! Your friend is in finance.
         </h1>
         <p className="text-lg text-gray-600 mb-8">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. luptatem reprehenderit labore asperiores provident officiis exercitationem, 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.!!!
         </p>
         <button className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition">
           Get Started <ArrowRight size={18} />
