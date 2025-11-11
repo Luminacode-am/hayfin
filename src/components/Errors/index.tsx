@@ -1,6 +1,6 @@
 import React from  'react'
 
-const Pages404 :React.FC = () => {
+const Errors :React.FC = () => {
   return (
     <>
       <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -29,4 +29,4 @@ const Pages404 :React.FC = () => {
   )
 }
 
-export default Pages404
+export default Errors
