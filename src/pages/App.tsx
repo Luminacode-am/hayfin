@@ -1,14 +1,17 @@
-import React from 'react';
-import './Pages404'
-import Pages404 from '../components/Pages404';
+import Hero from "../components/Hero";
+import AppBar from "../components/AppBar";
+import Footer from "../components/Footer";
 
 function App() {
   return (
-    <div className="">
-      <Pages404/>
-  </div>
+    <div className="min-h-screen flex flex-col">
+      <AppBar />
+      <main className="flex-grow">
+        <Hero />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
-export default Pages404;
-
+export default App;
