@@ -1,18 +1,19 @@
-import React from 'react';
-import './App.css';
-import AppBar from '../components/AppBar';
-import Footer from '../components/Footer';
-import Hero from '../components/Hero';
+import Hero from "../components/Hero";
+import AppBar from "../components/AppBar";
+import Footer from "../components/Footer";
+import Cards from "../components/Cards";
 
 function App() {
   return (
-    <div className="">
-      <AppBar/>
-      <Hero/>
-      <Footer/>
-  </div>
+    <div className="min-h-screen flex flex-col">
+      <AppBar />
+      <main className="flex-grow">
+        <Hero />
+        <Cards/>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
 export default App;
-

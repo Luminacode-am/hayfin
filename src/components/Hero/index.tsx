@@ -1,15 +1,17 @@
-import React from 'react'
+import { ArrowRight } from 'lucide-react';
 
-const hero: React.FC = () => {
-    return (
-        <div id='hero'  className='max-w-6xl m-auto flex flex-col items-center text-center '>
-        <h2 className='font-bold text-5xl text-stone-50 w-[740px]'>Welcome to HAYFIN ! Your friend is in finance.</h2>
-        <div className='flex gap-[16px] justify-center pt-[48px] items-center'>
-            <button className='text-lg text-medium pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-black rounded-xl bg-white '> Call to action </button>
-            <button className='text-lg text-medium pr-[16px] pl-[16px] pt-[12px] pb-[12px] text-black rounded-xl bg-white'> Secondary </button>
-         </div>
-         </div>
-    )
+export default function Hero() {
+  return (
+    <section className="bg-gradient-to-b from-blue-50 to-white text-center py-24 px-6">
+        <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-4">
+            Welcome to HAYFIN ! Your friend is in finance.
+        </h1>
+        <p className="text-lg text-gray-600 mb-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.!!!
+        </p>
+        <button className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition">
+          Get Started <ArrowRight size={18} />
+        </button>
+    </section>
+  );
 }
-
-export default hero

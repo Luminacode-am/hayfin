@@ -1,20 +1,18 @@
-import React from  'react'
-import { Linkedin } from 'lucide-react';
-import {Instagram } from 'lucide-react';
-import { Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail } from "lucide-react";
 
-const Footer: React.FC = () => {
-    return (
-        <footer className='border-b shadow flex  max-w-6xl m-auto items-center justify-between'>
-           <p>Let’s work together</p>
-           <div className='flex gap-2'>
-           <Instagram />
-           <Linkedin />
-           <Twitter/>
-           </div>
-        </footer>
-
-    )
+export default function Footer() {
+  return (
+    <footer className="bg-gray-900 text-gray-300 py-8 px-6">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p className="text-sm">
+          © {new Date().getFullYear()} Lumina Code Academy. All rights reserved.
+        </p>
+        <div className="flex gap-4">
+          <a href="#" className="hover:text-white"><Github size={18} /></a>
+          <a href="#" className="hover:text-white"><Linkedin size={18} /></a>
+          <a href="#" className="hover:text-white"><Mail size={18} /></a>
+        </div>
+      </div>
+    </footer>
+  );
 }
-
-export default Footer

@@ -12,6 +12,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     size?: ButtonSize
     isFullWidth?: boolean
 }
+
 const ButtonStyled: React.FC<ButtonProps> = ({
     children,
     variant = 'filled',
@@ -50,7 +51,8 @@ const ButtonStyled: React.FC<ButtonProps> = ({
 
         const disabledStyles = 'opacity-60 cursor-not-allowed'
 
-    return ( <Button
+    return (
+        <Button
             className={
                 clsx(baseStyles,
                      colorStyles[variant][color],
@@ -66,6 +68,9 @@ const ButtonStyled: React.FC<ButtonProps> = ({
             {...props}
         >
             {children}
-        </Button> )
+        </Button>
+    )
 }
+
+
 export default ButtonStyled
