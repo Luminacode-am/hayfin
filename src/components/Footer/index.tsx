@@ -8,9 +8,15 @@ export default function Footer() {
           © {new Date().getFullYear()} Lumina Code Academy. All rights reserved.
         </p>
         <div className="flex gap-4">
-          <a href="#" className="hover:text-white"><Github size={18} /></a>
-          <a href="#" className="hover:text-white"><Linkedin size={18} /></a>
-          <a href="#" className="hover:text-white"><Mail size={18} /></a>
+          <a href="#" className="hover:text-white">
+            <Github size={18} />
+          </a>
+          <a href="#" className="hover:text-white">
+            <Linkedin size={18} />
+          </a>
+          <a href="#" className="hover:text-white">
+            <Mail size={18} />
+          </a>
         </div>
       </div>
     </footer>
