@@ -7,14 +7,14 @@ const cards = [
     description: 'Supermarket in Armenia',
     href: '#',
     comment:
-      'Payments are now made without delay.For us, this is the most convenient solution in business management',
+      'We have been working with this website since its creation and are very satisfied.',
   },
   {
     name: 'Yerevan City',
     description: 'Supermarket in Armenia',
     href: '#',
     comment:
-      'Payments are now made without delay.For us, this is the most convenient solution in business management',
+      'Financial Data is automatically synchronized, which has significantly reduced the amount of accounting work. We definitely recommend it to all retail businesses',
   },
   {
     name: 'Tsiran Supermarket',
