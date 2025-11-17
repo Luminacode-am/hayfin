@@ -26,14 +26,14 @@ const cards = [
 ];
 export default function Cards() {
   return (
-    <div className="flex gap-[50px] justify-center pb-[48px] ">
+    <div className="flex gap-[50px] justify-center pb-[48px]  ">
       {cards.map((card) => (
-        <Card key={card.name}>
-          <div className="p-[32px]">
-            <div>
+        <Card key={card.name} className="flex flex-col justify-between">
+        
+            <div className="pt-[32px] pr-[32px] pl-[32px]">
               <p className=" font-medium text-lg">{card.comment}</p>
             </div>
-            <div className="max-h-[48px] pt-[12px] flex">
+            <div className="max-h-[48px] pt-[12px] flex pl-[32px] mb-[32px]" >
               <img src={logo} alt="logo" className="pr-16px" />
               <div>
                 <div>
@@ -44,7 +44,7 @@ export default function Cards() {
                 </div>
               </div>
             </div>
-          </div>
+          
         </Card>
       ))}
     </div>
