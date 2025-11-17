@@ -1,6 +1,3 @@
-
-
-
 import { ArrowRight } from "lucide-react";
 import heroImage from './finance.png'
 
