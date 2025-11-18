@@ -34,7 +34,7 @@ export default function Cards() {
               <p className=" font-medium text-lg">{card.comment}</p>
             </div>
             <div className="max-h-[48px] pt-[12px] flex pl-[32px] mb-[32px]" >
-              <img src={logo} alt="logo" className="pr-16px" />
+              <img src={logo} alt="logo" className="pr-16px w-[48px] h-[48px]"  />
               <div>
                 <div>
                   <h3 className="text-base font-medium">{card.name}</h3>
