@@ -1,12 +1,10 @@
-import { ArrowRight } from "lucide-react";
-import heroImage from './finance.png'
+import { ArrowRight } from 'lucide-react';
+import heroImage from './finance.png';
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white py-20 px-6">
+    <section className="bg-linear-to-b from-blue-50 to-white py-20 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-
-     
         <div className="text-center md:text-left md:w-1/2">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 leading-tight">
             Building trust in every transaction.
@@ -26,10 +24,7 @@ export default function Hero() {
             className="w-full max-w-md h-auto"
           />
         </div>
-
       </div>
     </section>
   );
 }
-
-

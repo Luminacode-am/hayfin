@@ -1,16 +1,19 @@
-import { Disclosure } from "@headlessui/react";
-import { Menu, X } from "lucide-react";
+import { Disclosure } from '@headlessui/react';
+import { Menu, X } from 'lucide-react';
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Prices", href: "#", current: false },
-  { name: "About", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: 'Home', href: '#', current: true },
+  { name: 'Prices', href: '#', current: false },
+  { name: 'About', href: '#', current: false },
+  { name: 'Contact', href: '#', current: false },
 ];
 
 export default function AppBar() {
   return (
-    <Disclosure as="nav" className="bg-white shadow-sm fixed top-0 inset-x-0 z-50">
+    <Disclosure
+      as="nav"
+      className="bg-white shadow-xs fixed top-0 inset-x-0 z-50"
+    >
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,8 +33,8 @@ export default function AppBar() {
                     href={item.href}
                     className={`${
                       item.current
-                        ? "text-blue-600 font-semibold"
-                        : "text-gray-700 hover:text-blue-600"
+                        ? 'text-blue-600 font-semibold'
+                        : 'text-gray-700 hover:text-blue-600'
                     } px-3 py-2 text-sm`}
                   >
                     {item.name}
@@ -44,7 +47,7 @@ export default function AppBar() {
 
               {/* Mobile Menu Button */}
               <div className="flex items-center sm:hidden">
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-none">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-blue-600 focus:outline-hidden">
                   {open ? <X size={22} /> : <Menu size={22} />}
                 </Disclosure.Button>
               </div>
@@ -60,8 +63,8 @@ export default function AppBar() {
                   href={item.href}
                   className={`block ${
                     item.current
-                      ? "text-blue-600 font-semibold"
-                      : "text-gray-700 hover:text-blue-600"
+                      ? 'text-blue-600 font-semibold'
+                      : 'text-gray-700 hover:text-blue-600'
                   } px-3 py-2 text-base`}
                 >
                   {item.name}
