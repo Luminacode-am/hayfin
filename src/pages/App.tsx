@@ -1,7 +1,7 @@
 import Hero from '../components/Hero';
 import AppBar from '../components/AppBar';
 import Footer from '../components/Footer';
-import CardList from './components/CardList';
+import CardList from '../components/CardList';
 import VCardList from '../components/VCardList';
 
 function App() {
