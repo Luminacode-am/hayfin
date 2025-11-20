@@ -15,11 +15,11 @@ const Errors :React.FC = () => {
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#"
-              className="rounded-md bg-emerald-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-emerald-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700"
+              className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-cyan-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-700"
             >
               Go back home
             </a>
-            <a href="#" className="text-sm font-semibold text-gray-900 hover:text-emerald-700">
+            <a href="#" className="text-sm font-semibold text-gray-900 hover:text-cyan-700">
               Contact support <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
