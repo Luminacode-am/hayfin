@@ -1,6 +1,7 @@
 import logo from "./logo.png";
 import Card from "../Card";
 
+
 const cards = [
   {
     name: 'Sas Supermarket',
