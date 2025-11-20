@@ -9,6 +9,9 @@ import AppBar from "../components/AppBar";
 import Footer from "../components/Footer";
 import CardList from "../components/CardList";
 import VCardList from "../components/VCardList";
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 function App() {
   return (
@@ -17,7 +20,10 @@ function App() {
       <main className="grow">
         <Hero />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
          <VCardList />
         <CardList />
 >>>>>>> Stashed changes
