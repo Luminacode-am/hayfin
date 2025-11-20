@@ -14,3 +14,5 @@ const Card: React.FC<CardProps> = ({ children, border = "none", key, ...props })
     {children}
   </div>
 );
+
+export default Card;
