@@ -31,7 +31,7 @@ export default function Advantages() {
   {cards.map((item) => (
     <Card
       key={item.title}
-      className="flex flex-col justify-between p-8 border border-neutral-400 bg-neutral-400"
+      className="flex flex-col justify-between p-8 border border-neutral-400 "
     >
       <h3 className="text-lg font-semibold text-black mb-4 mt-2">
         {item.title}
