@@ -10,8 +10,8 @@ function App() {
       <AppBar />
       <main className="flex-grow">
         <Hero />
-        <CardList />
          <VCardList />
+        <CardList />
 
       </main>
       <Footer />

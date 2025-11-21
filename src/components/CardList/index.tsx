@@ -1,5 +1,5 @@
 import logo from "./logo.png";
-import Card from "../Card";
+import Card from '../Card';
 
 const cards = [
   {
@@ -28,7 +28,7 @@ export default function Cards() {
   return (
     <div className="flex gap-[50px] justify-center pb-[48px]  ">
       {cards.map((card) => (
-        <Card key={card.name} className="flex flex-col justify-between">
+        <Card  key={card.name} className="flex flex-col justify-between max-h-[280px] " width ={false}>
         
             <div className="pt-[32px] pr-[32px] pl-[32px]">
               <p className=" font-medium text-lg">{card.comment}</p>
