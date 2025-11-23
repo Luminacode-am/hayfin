@@ -21,18 +21,18 @@ export default function SectionWithCards() {
     <section className="max-w-7xl mx-auto py-12 px-6">
       <div className="flex justify-between items-stretch gap-6">
        
-        <div className="flex flex-col justify-center">
-          <h1 className="text-4xl font-sans">The advantage and importance 
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-12">
+          <h1 className="text-4xl font-sans text-slate-800">The advantage and importance 
             ofthis website intoday's world</h1>
         </div>
 
         
        <div className="w-full flex flex-col gap-6">
         {cardsData.map((card) => (
-          <div key={card.name} className=" border-slate-200 rounded-2xl bg-gray-200 p-6">
-            <h3 className="font-serif text-zinc-950 text-xl">
+          <div key={card.name} className=" border-slate-100 rounded-2xl bg-white p-6 shadow-lg">
+            <h3 className="font-serif text-slate-900 text-xl">
               {card.name}</h3>
-                 <p className="font-serif text-gray-500text-sm mt-2">
+                 <p className="font-serif text-slate-600 text-sm mt-2">
                 {card.description}
               </p>
             </div>
