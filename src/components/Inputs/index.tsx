@@ -28,12 +28,42 @@ const InputStyle: React.FC<InputPops> = ({
 }) => {
 const InputStyles: Record<InputType, Record<InputBorder, string>> = {
 number: {
-  gray: 'pl-10 bg-gray-400',
-  white: 'pl-10 bg-white'
-  black: 'pl-10 bg-black'
+  gray: 'pl-10 pt-5 pb-5 text-gray-400',
+  white: 'pl-10 pt-5 pb-5 pl-10 text-white',
+  black: 'pl-10 pt-5 pb-5 pl-10 text-black',
 },
-}
-}
+email: {
+  gray: 'pl-10 pt-5 pb-5 text-gray-400',
+  white: 'pl-10 pt-5 pb-5 text-white',
+  black: 'pl-10 pt-5 pb-5 text-black',
+},
+password: {
+  gray: 'pl-10 pt-5 pb-5 text-gray-400',
+  white: 'pl-10 pt-5 pb-5 text-white',
+  black: 'pl-10 pt-5 pb-5 text-black',
+},
+};
+
+const borderStyles: Record<InputBorder, string> = {
+  xl: 'text-Xl',
+  2xl: 'text-2xl',
+  3xl: 'text-3xl',
+};
+
+return (
+  <Input 
+  className={clsx(
+    InputStyles,
+    InputStyles[type][textColor],
+    borderStyles[border],
+  )}
+  disabled={disabled}
+  {...props}
+  >
+    {children}
+  </Input>
+);
+};
 
 
 export default InputStyle;
