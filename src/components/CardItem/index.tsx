@@ -1,9 +1,10 @@
 import { Description } from "@headlessui/react";
+import { Circle} from 'lucide-react';
 import React from "react";
 
 const cardsData = [
   {
-    name:'Easy-to-use system',
+    name:'Easy-to-use system' ,
      description:'Everyone can quickly understand how to use the site:simple design,Armenian interface,and fast response.',
   },
   {
@@ -31,6 +32,7 @@ export default function SectionWithCards() {
         {cardsData.map((card) => (
           <div key={card.name} className=" border-slate-100 rounded-2xl bg-white p-6 shadow-lg">
             <h3 className="font-serif text-slate-900 text-xl">
+              <Circle size={18} strokeWidth={2} />
               {card.name}</h3>
                  <p className="font-serif text-slate-600 text-sm mt-2">
                 {card.description}
