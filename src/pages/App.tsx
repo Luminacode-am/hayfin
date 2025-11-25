@@ -1,6 +1,8 @@
-import Hero from "../components/Hero";
-import AppBar from "../components/AppBar";
-import Footer from "../components/Footer";
+import Hero from '../components/Hero';
+import AppBar from '../components/AppBar';
+import Footer from '../components/Footer';
+import CardList from '../components/CardList';
+import VCardList from '../components/VCardList';
 
 function App() {
   return (
@@ -8,6 +10,9 @@ function App() {
       <AppBar />
       <main className="flex-grow">
         <Hero />
+        <CardList />
+         <VCardList />
+
       </main>
       <Footer />
     </div>
