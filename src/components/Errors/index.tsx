@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Errors :React.FC = () => {
+const Errors: React.FC = () => {
   return (
     <>
       <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -19,7 +19,10 @@ const Errors :React.FC = () => {
             >
               Go back home
             </a>
-            <a href="#" className="text-sm font-semibold text-gray-900 hover:text-cyan-700">
+            <a
+              href="#"
+              className="text-sm font-semibold text-gray-900 hover:text-cyan-700"
+            >
               Contact support <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -27,6 +30,6 @@ const Errors :React.FC = () => {
       </main>
     </>
   );
-}
+};
 
-export default Errors
+export default Errors;

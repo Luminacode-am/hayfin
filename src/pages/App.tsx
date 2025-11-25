@@ -11,8 +11,7 @@ function App() {
       <main className="flex-grow">
         <Hero />
         <CardList />
-         <VCardList />
-
+        <VCardList />
       </main>
       <Footer />
     </div>
