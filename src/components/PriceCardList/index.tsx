@@ -17,16 +17,16 @@ const cards = [
     {
         name: "Gold Vip", status: "For large teams", price: "$10", sale: "$4",time:"/month",
         services:
-            `All the Plan #2 features
+            `All the Plan #3 features
     Feature 6 
     Feature 7`
     }
 ]
 export default function Cards() {
     return (
-        <div className="flex gap-[50px] justify-center pb-[48px]  ">
+        <div className="flex gap-[50px] justify-center pb-[48px] flex-wrap">
             {cards.map((card) => (
-                <Card key={card.name} className="flex flex-col justify-between max-h-[415px] flex-wrap flex " >
+                <Card key={card.name} className="flex flex-col justify-between max-h-[415px]  " >
                     <div className='max-w-[360px] max-h-[415px] pt-[32px] pl-[24px]  pr-[24px]  pb-[24px]'>
                        
                         <>
@@ -40,11 +40,11 @@ export default function Cards() {
                             <span className='text-[18px] font-[500] text-[#737373]'>{card.time}</span>
                             </div>
                         </div>
-                        <div className='pb-[32px]'>
-                            <p className='w-[204px] text-[18px]'>{card.services}</p>
+                        <div className='pb-[32px] w-[200px]' >
+                            <p className=' text-[18px] font-[500] w-[135px]'>{card.services}</p>
                         </div>
                        
-                        <Button className='pt-[12px] pb-[12px] w-[312px]' >
+                        <Button className='pt-[12px] pb-[12px] w-[312px] bg-[#0D7680] rounded-[12px]' >
                             Sign up
 
                         </Button>
