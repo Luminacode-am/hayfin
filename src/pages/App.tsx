@@ -3,7 +3,7 @@ import AppBar from '../components/AppBar';
 import Footer from '../components/Footer';
 import CardList from '../components/CardList';
 import VCardList from '../components/VCardList';
-
+import ImportantCards from '../components/ImportantCards';
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -12,6 +12,7 @@ function App() {
         <Hero />
         <CardList />
         <VCardList />
+        <ImportantCards />
       </main>
       <Footer />
     </div>
