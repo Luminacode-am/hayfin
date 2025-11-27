@@ -3,13 +3,13 @@ import Button from '../Button'
 
 const cards = [
     {
-        name: "Gold Vip", status: "For individuals", price: "$2", sale: "FREE",time:"/month",
+        name: "Bronze Vip", status: "For individuals", price: "$2", sale: "FREE",time:"/month",
         services:
             `Feature 1
     Feature 2 
     Feature 3`},
     {
-        name: "Gold Vip", status: "For individuals", price: "$2", sale: "FREE",time:"/month",
+        name: "Silver Vip", status: "For individuals", price: "$2", sale: "FREE",time:"/month",
         services:
             `Feature 1
     Feature 2 
@@ -29,15 +29,15 @@ export default function Cards() {
                 <Card key={card.name} className="flex flex-col justify-between max-h-[415px]  " >
                     <div className='max-w-[360px] max-h-[415px] pt-[32px] pl-[24px]  pr-[24px]  pb-[24px]'>
                        
-                        <div>
-                            <h2>{card.name}</h2>
-                            <p>{card.status}</p>
-                        </div>
+                        <>
+                            <h2 className='text-[20px] font-[600] text-[#0D7680]'>{card.name}</h2>
+                            <p className='text-[18px] font-[500] text-[#737373]'>{card.status}</p>
+                        </>
                         <div  className='pb-[32px] pt-[32px] '>
-                            <span><del>{card.price}</del></span>
+                            <span><del className='text-[24px] font-[700] text-[#737373]'>{card.price}</del></span>
                             <div>
-                            <span>{card.sale}</span>
-                            <span>{card.time}</span>
+                            <span className='text-[36px] font-[700]'>{card.sale}</span>
+                            <span className='text-[18px] font-[500] text-[#737373]'>{card.time}</span>
                             </div>
                         </div>
                         <div className='pb-[32px]'>

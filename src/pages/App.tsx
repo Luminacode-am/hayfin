@@ -1,8 +1,8 @@
 import Hero from '../components/Hero';
 import AppBar from '../components/AppBar';
 import Footer from '../components/Footer';
-import CardList from '../components/CardList';
-import VCardList from '../components/VCardList';
+import ParentsList  from '../components/ParentsList';
+import PriceCardList from '../components/PriceCardList';
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
       <AppBar />
       <main className="flex-grow">
         <Hero />
-         <VCardList />
-        <CardList />
+         <PriceCardList />
+        <ParentsList />
 
       </main>
       <Footer />
