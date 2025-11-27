@@ -9,7 +9,7 @@ interface CardProps extends React.HTMLAttributes<HTMLElement> {
 }
 
 const Card: React.FC<CardProps> = ({ children, border = "true", width = "true", key, ...props }) => {
-  const baseStayles = "bg-white  rounded-[16px] flex flex-col justify-between flex-wrap "
+  const baseStayles = "bg-white  rounded-[16px] flex flex-col justify-between "
 return(
   <div
     key={key}
