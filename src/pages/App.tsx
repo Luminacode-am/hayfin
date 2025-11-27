@@ -3,6 +3,7 @@ import AppBar from '../components/AppBar';
 import Footer from '../components/Footer';
 import CardList from '../components/CardList';
 import VCardList from '../components/VCardList';
+import  Input  from '../components/Inputs';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Hero />
         <CardList />
          <VCardList />
-
+         <Input />
       </main>
       <Footer />
     </div>
