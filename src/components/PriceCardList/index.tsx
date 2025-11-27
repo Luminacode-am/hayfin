@@ -9,24 +9,24 @@ const cards = [
     Feature 2 
     Feature 3`},
     {
-        name: "Silver Vip", status: "For individuals", price: "$2", sale: "FREE",time:"/month",
+        name: "Silver Vip", status: "For medium teams", price: "$5", sale: "FREE",time:"/month",
         services:
-            `Feature 1
-    Feature 2 
-    Feature 3`},
+            `All the Plan #2 features
+    Feature 4 
+    Feature 5`},
     {
-        name: "Gold Vip", status: "For individuals", price: "$2", sale: "FREE",time:"/month",
+        name: "Gold Vip", status: "For large teams", price: "$10", sale: "$4",time:"/month",
         services:
-            `Feature 1
-    Feature 2 
-    Feature 3`
+            `All the Plan #2 features
+    Feature 6 
+    Feature 7`
     }
 ]
 export default function Cards() {
     return (
         <div className="flex gap-[50px] justify-center pb-[48px]  ">
             {cards.map((card) => (
-                <Card key={card.name} className="flex flex-col justify-between max-h-[415px]  " >
+                <Card key={card.name} className="flex flex-col justify-between max-h-[415px] flex-wrap flex " >
                     <div className='max-w-[360px] max-h-[415px] pt-[32px] pl-[24px]  pr-[24px]  pb-[24px]'>
                        
                         <>
@@ -41,7 +41,7 @@ export default function Cards() {
                             </div>
                         </div>
                         <div className='pb-[32px]'>
-                            <p className='w-[80px]'>{card.services}</p>
+                            <p className='w-[204px] text-[18px]'>{card.services}</p>
                         </div>
                        
                         <Button className='pt-[12px] pb-[12px] w-[312px]' >
