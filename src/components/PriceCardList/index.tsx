@@ -26,7 +26,7 @@ export default function Cards() {
     return (
         <div className="flex gap-[50px] justify-center pb-[48px] flex-wrap">
             {cards.map((card) => (
-                <Card key={card.name} className="flex flex-col justify-between max-h-[415px]  " width={''} >
+                <Card key={card.name} className="flex flex-col justify-between max-h-[415px]  " width={'360px'} >
                     <div className='max-w-[360px] max-h-[415px] pt-[32px] pl-[24px]  pr-[24px]  pb-[24px]'>
                        
                         <>

@@ -5,10 +5,17 @@ interface CardProps extends React.HTMLAttributes<HTMLElement> {
   border?: boolean;
   children?: React.ReactNode;
   key?: string;
-  width:string;
+  width?:string;
 }
 
-const Card: React.FC<CardProps> = ({ children, border = "true", key, ...props }) => {
+const Card: React.FC<CardProps> = ({
+  children,
+  border = true,
+  width,
+  key,
+  className,
+   ...props
+   }) => {
   const baseStayles = "bg-white  rounded-[16px] flex flex-col justify-between "
 return(
 
@@ -16,12 +23,12 @@ return(
     key={key}
     className = {
     clsx(
+      className,
   baseStayles,
   {"border-[#E6E6E6] border": border},
   
 )}
-
- 
+{...props}
   >
     {children}
   </div>)
