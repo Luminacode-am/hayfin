@@ -1,23 +1,37 @@
-type CardBorder = `solid` | `none`;
+import clsx from 'clsx'
 
-interface CardProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  border?: CardBorder;
+
+interface CardProps extends React.HTMLAttributes<HTMLElement> {
+  border?: boolean;
   children?: React.ReactNode;
   key?: string;
+  width?:string;
 }
 
 const Card: React.FC<CardProps> = ({
   children,
-  border = 'none',
+  border = true,
+  width,
   key,
-  ...props
-}) => (
+  className,
+   ...props
+   }) => {
+  const baseStayles = "bg-white  rounded-[16px] flex flex-col justify-between "
+return(
+
   <div
     key={key}
-    className="w-[336px] bg-white max-h-[280px] rounded-[16px] border-[#E6E6E6] border flex flex-col justify-between"
+    className = {
+    clsx(
+      className,
+  baseStayles,
+  {"border-[#E6E6E6] border": border},
+  
+)}
+{...props}
   >
     {children}
-  </div>
-);
+  </div>)
+};
 
-export default Card;
+export default Card
