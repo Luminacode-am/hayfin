@@ -46,7 +46,7 @@ export default function Advantages() {
                   {card.description}
                 </p>
               </div>
-            </Card>
+           </Card>
           ))}
         </div>
       </div>
