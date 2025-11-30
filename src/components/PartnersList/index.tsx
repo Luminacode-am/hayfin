@@ -1,5 +1,5 @@
-import logo from './logo.png';
-import Card from '../Card';
+import logo from "./logo.png";
+import Card from "../Card";
 
 const cards = [
   {
@@ -26,25 +26,25 @@ const cards = [
 ];
 export default function Cards() {
   return (
-    <div className="flex gap-[50px] justify-center pb-[48px]  ">
+    <div className="flex gap-[50px] justify-center pb-[48px] flex-wrap">
       {cards.map((card) => (
-        <Card key={card.name} className="flex flex-col justify-between">
-          <div className="pt-[32px] pr-[32px] pl-[32px]">
-            <p className=" font-medium text-lg">{card.comment}</p>
-          </div>
-          <div className="max-h-[48px] pt-[12px] flex pl-[32px] mb-[32px]">
-            <img src={logo} alt="logo" className="pr-16px w-[48px] h-[48px]" />
-            <div>
+        <Card key={card.name} className="flex flex-col justify-between w-[336px]" width={"336px"} >
+        
+            <div className="pt-[32px] pr-[32px] pl-[32px]">
+              <p className=" font-medium text-lg">{card.comment}</p>
+            </div>
+            <div className="max-h-[48px] pt-[12px] flex pl-[32px] mb-[32px]" >
+                <img src={logo} alt="logo" className="pr-16px w-[48px] h-[48px]"  />
               <div>
-                <h3 className="text-base font-medium">{card.name}</h3>
-              </div>
-              <div>
-                <p className="text-base text-[#DCDCDC] font-medium">
-                  {card.description}
-                </p>
+                <div>
+                  <h3 className="text-base font-medium">{card.name}</h3>
+                </div>
+                <div>
+                  <p className="text-base text-[#DCDCDC] font-medium">{card.description}</p>
+                </div>
               </div>
             </div>
-          </div>
+        
         </Card>
       ))}
     </div>
