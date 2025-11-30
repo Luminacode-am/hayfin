@@ -13,11 +13,7 @@ function App() {
         <Hero />
         <CardList />
          <VCardList />
-<<<<<<< Updated upstream
-         <Input type='email'/>
-=======
-         <Input className=' input' type='number' />
->>>>>>> Stashed changes
+         <Input/>
       </main>
       <Footer />
     </div>

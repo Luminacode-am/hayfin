@@ -1,5 +1,5 @@
-import clsx from "clsx";
-import React, {HtmlHTMLAttributes} from "react";
+import clsx from 'clsx';
+import React, { HtmlHTMLAttributes, useState } from 'react';
 import  { Input }  from '@headlessui/react';
 
 type InputType ='email' | 'number' | 'password';
@@ -20,24 +20,26 @@ const inputProportion: React.FC<InputPops> = ({
   textColor = 'gray', 
   className, 
   disabled,
+  value,
   ...props
   
 }) => {
 const inputStyles: Record<InputType, Record<InputTextColor, string>> = {
 number: {
-  gray: 'pl-3 pt-2 pb-2 2xl text-gray-500 border border-gray-600 px-2 max-w-100px',
-  white: 'pl-3 pt-2 pb-2 2xl text-white border border-gray-600 px-2 max-w-100px',
-  black: 'pl-3 pt-2 pb-2 2xl text-black border border-gray-600 px-2 max-w-100px',
+  gray: 'pl-3 pt-2 pb-2 pr-3 2xl text-gray-500 border border-gray-600 px-2',
+  white: 'pl-3 pt-2 pb-2 pr-3 2xl text-white border border-gray-600 px-2',
+  black: 'pl-3 pt-2 pb-2 pr-3 2xl text-black border border-gray-600 px-2',
 },
 email: {
-  gray: 'pl-3 pt-2 pb-2 Xl text-gray-500 border border-gray-600 px-2 max-w-100px',
-  white: 'pl-3 pt-2 pb-2 Xl text-white border border-gray-600 px-2 max-w-100px',
-  black: 'pl-3 pt-2 pb-2 Xl text-black border border-gray-600 px-2 max-w-100px',
+  gray: 'pl-3 pt-2 pb-2 pr-3 Xl text-gray-500 border border-gray-600 px-2',
+  white: 'pl-3 pt-2 pb-2 pr-3 Xl text-white border border-gray-600 px-2',
+  black: 'pl-3 pt-2 pb-2 pr-3 Xl text-black border border-gray-600 px-2',
 },
 password: {
-  gray: 'pl-3 pt-2 pb-2 3xl text-gray-500 border border-gray-600 px-2 max-w-100px',
-  white: 'pl-3 pt-2 pb-2 3xl text-white border border-gray-600 px-2 max-w-100px',
-  black: 'pl-3 pt-2 pb-2 3xl text-black border border-gray-600 px-2 max-w-100px',
+  gray: 'pl-3 pt-2 pb-2 pr-3 3xl text-gray-500 border border-gray-600 px-2',
+  white: 'pl-3 pt-2 pb-2 pr-3 3xl text-white border border-gray-600 px-2',
+  black: 'pl-3 pt-2 pb-2 pr-3 3xl text-black border border-gray-600 px-2',
+
 },
 };
 
@@ -46,6 +48,24 @@ const borderStyles: Record<InputBorder, string> = {
   '2xl':'text-2xl',
   '3xl': 'text-3xl',
 };
+
+function InputNumber(){
+  if(type = 'number'){
+    const [value, setValue] = useState("");
+    return (
+    <input
+      value={value}
+      onChange={(e) => {
+        const val = e.target.value;
+        if (/^\d*$/.test(val)) {  
+          setValue(val);
+        }
+      }}
+    />
+  );
+  }
+}
+
 
 return (
   <>
@@ -56,6 +76,7 @@ return (
     className={clsx(
     inputStyles,
     className,
+    value,
     inputStyles[type][textColor],
     borderStyles[border],
     )}
