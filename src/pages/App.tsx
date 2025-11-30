@@ -3,7 +3,7 @@ import AppBar from '../components/AppBar';
 import Footer from '../components/Footer';
 import CardList from '../components/CardList';
 import VCardList from '../components/VCardList';
-import  Input  from '../components/Inputs';
+import  Input  from '../components/Input';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Hero />
         <CardList />
          <VCardList />
-
+         <Input type='email'/>
       </main>
       <Footer />
     </div>
