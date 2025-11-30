@@ -16,16 +16,24 @@ export default function AppBar() {
 
               {/* Desktop Sign In / Sign Up */}
               <div className="hidden sm:flex sm:space-x-1 text-base text-cyan-600 items-center font-semibold mr-4">
-                <a href="#" className="hover:text-cyan-700 transition">Sign In</a>
+                <a href="#" className="hover:text-cyan-700 transition">
+                  Sign In
+                </a>
                 <span>/</span>
-                <a href="#" className="hover:text-cyan-700 transition">Sign Up</a>
+                <a href="#" className="hover:text-cyan-700 transition">
+                  Sign Up
+                </a>
               </div>
 
               {/* Mobile Sign In / Sign Up */}
               <div className="sm:hidden flex items-start font-semibold space-x-1 sm:hidden text-cyan-600">
-                <a href="#" className="hover:text-cyan-700 transition">Sign In</a>
+                <a href="#" className="hover:text-cyan-700 transition">
+                  Sign In
+                </a>
                 <span>/</span>
-                <a href="#" className="hover:text-cyan-700 transition">Sign Up</a>
+                <a href="#" className="hover:text-cyan-700 transition">
+                  Sign Up
+                </a>
               </div>
             </div>
           </div>
