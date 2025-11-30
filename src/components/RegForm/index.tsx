@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'
+import Button from '../Button';
 
 const accountTypes = [
   { id: "user", name: "Անձնական" },
@@ -85,9 +86,14 @@ export default function RegistrationForm() {
         </div>
       )}
 
-      <button className="mt-6 w-full p-3 rounded-xl bg-cyan-600 text-white hover:bg-cyan-700 transition">
+      <Button
+        variant="filled"
+        color="primary"
+        size="lg"
+        className="mt-6 w-full p-3 rounded-xl transition"
+      >
         Գրանցվել
-      </button>
+      </Button>
     </div>
   );
 }
