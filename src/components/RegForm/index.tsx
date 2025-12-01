@@ -1,9 +1,14 @@
-import { useState } from "react";
-import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'
+import { useState } from 'react';
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOption,
+  ListboxOptions,
+} from '@headlessui/react';
 
 const accountTypes = [
-  { id: "user", name: "Անձնական" },
-  { id: "shop", name: "Ընկերություն" },
+  { id: 'user', name: 'Անձնական' },
+  { id: 'shop', name: 'Ընկերություն' },
 ];
 
 export default function RegistrationForm() {
@@ -15,7 +20,9 @@ export default function RegistrationForm() {
 
       <div className="p-3 border mb-3 bg-cyan-600 rounded-xl text-white">
         <Listbox value={selected} onChange={setSelected}>
-          <ListboxButton className="border-cyan-600">{selected.name}</ListboxButton>
+          <ListboxButton className="border-cyan-600">
+            {selected.name}
+          </ListboxButton>
           <ListboxOptions anchor="bottom" className="border-cyan-600">
             {accountTypes.map((accountType) => (
               <ListboxOption
@@ -30,7 +37,7 @@ export default function RegistrationForm() {
         </Listbox>
       </div>
 
-      {selected.id === "user" && (
+      {selected.id === 'user' && (
         <div className="flex flex-col gap-3">
           <input
             type="text"
@@ -60,7 +67,7 @@ export default function RegistrationForm() {
         </div>
       )}
 
-      {selected.id === "shop" && (
+      {selected.id === 'shop' && (
         <div className="flex flex-col gap-3">
           <input
             type="text"
