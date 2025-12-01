@@ -32,11 +32,9 @@ export default function Advantages() {
           </h1>
         </div>
 
-       <div className="w-full flex flex-col gap-6 ">
+        <div className="w-full flex flex-col gap-6 ">
           {cardsData.map((card) => (
-            <Card
-              key={card.name}
-              className="p-7  rounded-2xl bg-slate-100 bg-with">
+            <Card key={card.name} className="p-7  rounded-2xl bg-slate-100 ">
               <div className="flex items-center gap-3">
                 {card.icon}
                 <h3 className=" font-medium  text-2xl text-neutral-950 ">
