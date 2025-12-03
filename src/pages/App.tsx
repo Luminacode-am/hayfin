@@ -3,7 +3,6 @@ import AppBar from '../components/AppBar';
 import Footer from '../components/Footer';
 import CardList from '../components/CardList';
 import VCardList from '../components/VCardList';
-import  Input  from '../components/Input';
 
 function App() {
   return (
