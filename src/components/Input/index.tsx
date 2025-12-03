@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React, { HtmlHTMLAttributes, useState } from 'react';
-import  { Input }  from '@headlessui/react';
+import  {Description, Field, Label, Input }  from '@headlessui/react';
 
 type InputType ='email' | 'number' | 'password';
 type InputBorder = 'xl' | '2xl' | '3xl';
@@ -50,33 +50,24 @@ const borderStyles: Record<InputBorder, string> = {
 };
 
 function InputNumber(){
-  if(type = 'number'){
-    const [value, setValue] = useState("");
-    return (
-    <input
-      value={value}
-      onChange={(e) => {
-        const val = e.target.value;
-        if (/^\d*$/.test(val)) {  
-          setValue(val);
-        }
-      }}
-    />
-  );
-  }
+  return(
+
+  )
 }
 
 
 return (
   <>
-    <p>
+    <Label className="font-medium text-white">{type}</Label>
+    <Description className="">
       Please write yours {type}
-    </p>
+    </Description>
    <Input 
     className={clsx(
     inputStyles,
     className,
     value,
+      InputNumber(),
     inputStyles[type][textColor],
     borderStyles[border],
     )}
