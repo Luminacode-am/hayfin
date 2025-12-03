@@ -13,7 +13,6 @@ function App() {
         <Hero />
         <CardList />
          <VCardList />
-         <Input/>
       </main>
       <Footer />
     </div>
