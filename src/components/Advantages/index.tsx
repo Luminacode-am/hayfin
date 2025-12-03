@@ -3,21 +3,21 @@ import { Circle, Diamond, Triangle } from 'lucide-react';
 
 const cardsData = [
   {
-    name: 'Easy-to-use system',
+    name: 'Հարմար և հեշտ օգտագործվող համակարգ',
     description:
-      'Everyone can quickly understand how to use the site:simple design,Armenian interface,and fast response.',
+      'Յուրաքանչյուր ոք կարող է արագ պարզել, թե ինչպես օգտվել կայքից ՝ Պարզ դիզայն, հայկական ինտերֆեյս և արագ արձագանք:',
     icon: <Circle size={18} />,
   },
   {
-    name: 'Control your finances is one place',
+    name: 'Վերահսկեք ձեր ֆինանսները մեկ վայրում։',
     description:
-      'You can track expenses,plan your budget,and save money wihout complicated calculations.',
+    'Դուք կարող եք հետևել ծախսերին, պլանավորել ձեր բյուջեն և գումարը խնայել առանց բարդ հաշվարկների։',
     icon: <Diamond size={18} />,
   },
   {
-    name: 'Security and Trust',
+    name: 'Անվտանգություն և վստահություն',
     description:
-      'All data is kept confidential, the site proctects your personal information.',
+    'Բոլոր տվյալները գաղտնի են պահվում, կայքը պաշտպանում է ձեր անձնական տեղեկությունները։',
     icon: <Triangle size={18} />,
   },
 ];
@@ -28,7 +28,7 @@ export default function Advantages() {
       <div className="flex flex-col md:flex-row   md:justify-between gap-12">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-12">
           <h1 className="text-4xl  font-medium text-slate-950">
-            The advantage and importance ofthis website intodays world
+            Կայքի առավելությունը և կարևորությունը այսօրվա աշխարհում
           </h1>
         </div>
 
