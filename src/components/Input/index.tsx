@@ -49,12 +49,6 @@ const borderStyles: Record<InputBorder, string> = {
   '3xl': 'text-3xl',
 };
 
-function InputNumber(){
-  return(
-
-  )
-}
-
 
 return (
   <>
@@ -67,7 +61,6 @@ return (
     inputStyles,
     className,
     value,
-      InputNumber(),
     inputStyles[type][textColor],
     borderStyles[border],
     )}
