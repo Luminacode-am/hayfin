@@ -4,33 +4,33 @@ import Button from '../Button';
 const cards = [
   {
     name: 'Bronze Vip',
-    status: 'For individuals',
+    status: 'Անհատների համար',
     price: '$2',
-    sale: 'FREE',
-    time: '/month',
-    services: `Feature 1
-    Feature 2 
-    Feature 3`,
+    sale: 'Անվճար',
+    time: '/Ամսեկան',
+    services: `Ծառայություններ 0
+   Ծառայություններ 1 
+   Ծառայություններ 2`,
   },
   {
     name: 'Silver Vip',
-    status: 'For medium teams',
+    status: 'Միջին թիմերի համար',
     price: '$5',
-    sale: 'FREE',
-    time: '/month',
-    services: `All the Plan #2 features
-    Feature 4 
-    Feature 5`,
+    sale: 'Անվճար',
+    time: '/Ամսեկան',
+    services: `Ծառայություններ 2
+    Ծառայություններ 3
+    Ծառայություններ 4`,
   },
   {
     name: 'Gold Vip',
-    status: 'For large teams',
+    status: 'Մեծ թիմերի համար',
     price: '$10',
     sale: '$4',
-    time: '/month',
-    services: `All the Plan #3 features
-    Feature 6 
-    Feature 7`,
+    time: '/Ամսեկան',
+    services: `Ծառայություններ 5
+   Ծառայություններ 6
+    Ծառայություններ 7`,
   },
 ];
 export default function Cards() {
@@ -65,7 +65,7 @@ export default function Cards() {
               </div>
             </div>
             <div className="pb-[32px] w-[200px]">
-              <p className=" text-[18px] font-[500] w-[135px]">
+              <p className=" text-[18px] font-[500] w-[195px]">
                 {card.services}
               </p>
             </div>

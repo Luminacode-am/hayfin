@@ -7,21 +7,21 @@ const cards = [
     description: 'Supermarket in Armenia',
     href: '#',
     comment:
-      'We have been working with this website since its creation and are very satisfied.',
+      'Մենք այս կայքի հետ աշխատում ենք դրա ստեղծումից ի վեր և շատ գոհ ենք։',
   },
   {
     name: 'Yerevan City',
     description: 'Supermarket in Armenia',
     href: '#',
     comment:
-      'Financial Data is automatically synchronized, which has significantly reduced the amount of accounting work. We definitely recommend it to all retail businesses',
+      'Ֆինանսական տվյալները ավտոմատ կերպով համաժամեցվում են, ինչը զգալիորեն կրճատել է հաշվապահական աշխատանքի ծավալը։ Մենք անպայման խորհուրդ ենք տալիս այն բոլոր մանրածախ առևտրի բիզնեսներին։',
   },
   {
     name: 'Tsiran Supermarket',
     description: 'Supermarket in Armenia',
     href: '#',
     comment:
-      'Payments are now made without delay.For us, this is the most convenient solution in business management',
+      'Վճարումները այժմ կատարվում են առանց ուշացման: Մեզ համար սա բիզնեսի կառավարման ամենահարմար լուծումն է:',
   },
 ];
 export default function Cards() {
@@ -30,7 +30,7 @@ export default function Cards() {
       {cards.map((card) => (
         <Card
           key={card.name}
-          className="flex flex-col justify-between w-[336px] h-[282px]"
+          className="flex flex-col justify-between w-[336px] h-[360px]"
           width={'336px'}
         >
           <div className="pt-[32px] pr-[32px] pl-[32px]">
