@@ -26,20 +26,20 @@ const cards = [
 ];
 export default function Cards() {
   return (
-    <div className="flex gap-[50px] justify-center pb-[48px]  ">
+    <div className="flex gap-[50px] justify-center pb-[48px] bg-light-bg dark:bg-dark-bg ">
       {cards.map((card) => (
-        <Card key={card.name} className="flex flex-col justify-between">
+        <Card key={card.name} className="flex flex-col bg-light-bg dark:bg-dark-bg justify-between">
           <div className="pt-[32px] pr-[32px] pl-[32px]">
-            <p className=" font-medium text-lg">{card.comment}</p>
+            <p className=" font-medium text-lg text-light-text dark:text-dark-text">{card.comment}</p>
           </div>
           <div className="max-h-[48px] pt-[12px] flex pl-[32px] mb-[32px]">
             <img src={logo} alt="logo" className="pr-16px w-[48px] h-[48px]" />
             <div>
               <div>
-                <h3 className="text-base font-medium">{card.name}</h3>
+                <h3 className="text-base font-medium text-light-text dark:text-dark-text">{card.name}</h3>
               </div>
               <div>
-                <p className="text-base text-[#DCDCDC] font-medium">
+                <p className="text-base text-light-text-secondary dark:text-dark-text-secondary font-medium">
                   {card.description}
                 </p>
               </div>

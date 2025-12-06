@@ -11,18 +11,18 @@ export default function RegistrationForm() {
   const [selected, setSelected] = useState(accountTypes[0]);
 
   return (
-    <div className="w-96 p-6 rounded-2xl border-gray-200 bg-white shadow-2xl m-auto">
-      <h2 className="text-2xl font-semibold mb-4">Ստեղծել Հաշիվ</h2>
+    <div className="w-96 p-6 rounded-2xl bg-light-bg dark:bg-dark-bg shadow-2xl shadow-stone-700 m-auto">
+      <h2 className="text-2xl font-semibold mb-4 text-light-text dark:text-dark-text">Ստեղծել Հաշիվ</h2>
 
-      <div className="p-3 border mb-3 bg-cyan-600 rounded-xl text-white">
+      <div className="p-[14px] border mb-3 bg-light-btn dark:bg-dark-btn rounded-xl text-white">
         <Listbox value={selected} onChange={setSelected}>
-          <ListboxButton className="border-cyan-600">{selected.name}</ListboxButton>
-          <ListboxOptions anchor="bottom" className="border-cyan-600">
+          <ListboxButton>{selected.name}</ListboxButton>
+          <ListboxOptions anchor="bottom">
             {accountTypes.map((accountType) => (
               <ListboxOption
                 key={accountType.id}
                 value={accountType}
-                className="cursor-pointer border-cyan-600 text-cyan-600 bg-white p-3"
+                className="cursor-pointer text-light-link dark:text-dark-link bg-light-text-tertiary dark:bg-dark-text-tertiary p-3"
               >
                 {accountType.name}
               </ListboxOption>

@@ -7,7 +7,7 @@ import RegisterForm from '../components/RegForm';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-light-bg dark:bg-dark-bg">
       <AppBar />
       <main className="flex-grow">
         <Hero />
