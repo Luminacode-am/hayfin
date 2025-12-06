@@ -1,6 +1,6 @@
 import clsx from 'clsx';
-import React, { HtmlHTMLAttributes, useState } from 'react';
-import  {Description, Field, Label, Input }  from '@headlessui/react';
+import React, { HtmlHTMLAttributes } from 'react';
+import  {Description, Label, Input }  from '@headlessui/react';
 
 type InputType ='email' | 'number' | 'password';
 type InputBorder = 'xl' | '2xl' | '3xl';
