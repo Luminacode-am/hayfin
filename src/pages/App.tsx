@@ -1,9 +1,9 @@
 import Hero from '../components/Hero';
 import AppBar from '../components/AppBar';
 import Footer from '../components/Footer';
-import CardList from '../components/CardList';
-import VCardList from '../components/VCardList';
-
+import PartnersList  from '../components/PartnersList';
+import PriceCardList from '../components/PriceCardList';
+import Advantages    from '../components/Advantages';
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -11,7 +11,7 @@ function App() {
       <main className="flex-grow">
         <Hero />
         <CardList />
-         <VCardList />
+        <VCardList />
       </main>
       <Footer />
     </div>
