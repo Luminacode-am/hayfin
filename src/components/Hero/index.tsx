@@ -10,10 +10,10 @@ export default function Hero() {
             Վստահություն կերտել յուրաքանչյուր գործարքի մեջ։
           </h1>
           <p className="text-lg text-gray-600 mb-8">
-           Ձեր վստահելի գործընկերը ֆինանսների և աճի հարցերում։
+            Ձեր վստահելի գործընկերը ֆինանսների և աճի հարցերում։
           </p>
           <button className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition">
-           Սկսել <ArrowRight size={18} />
+            Սկսել <ArrowRight size={18} />
           </button>
         </div>
 
