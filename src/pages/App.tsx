@@ -10,9 +10,9 @@ function App() {
       <AppBar />
       <main className="flex-grow">
         <Hero />
-        <PartnersList />
         <Advantages />
         <PriceCardList />
+        <PartnersList />
       </main>
       <Footer />
     </div>
