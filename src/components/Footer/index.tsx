@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -9,14 +9,23 @@ export default function Footer() {
           reserved.
         </p>
         <div className="flex gap-4">
-          <a href="#" className="hover:text-white">
+          <a
+            href="https://github.com/Luminacode-am/hayfin"
+            className="hover:text-white"
+          >
             <Github size={18} />
           </a>
-          <a href="#" className="hover:text-white">
+          <a
+            href="https://www.linkedin.com/company/luminacode-academy/"
+            className="hover:text-white"
+          >
             <Linkedin size={18} />
           </a>
-          <a href="#" className="hover:text-white">
-            <Mail size={18} />
+          <a
+            href="https://www.instagram.com/lumina_code_academy/"
+            className="hover:text-white"
+          >
+            <Instagram size={18} />
           </a>
         </div>
       </div>
