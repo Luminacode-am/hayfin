@@ -37,7 +37,7 @@ const ButtonStyled: React.FC<ButtonProps> = ({
       danger: 'border border-red-600 text-red-600 hover:bg-red-700',
     },
     text: {
-      primary: 'text-blue-600 hover:bg-blue-700',
+      primary: 'text-blue-600 hover:bg-blue-700 ',
       secondary: 'text-gray-600 hover:bg-gray-700',
       danger: 'text-red-600 hover:bg-red-700',
     },
