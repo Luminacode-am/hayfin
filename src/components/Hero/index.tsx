@@ -3,8 +3,8 @@ import heroImage from './finance.png';
 
 export default function Hero() {
   return (
-    <section className="bg-linear-to-b from-blue-50 to-white pb-20 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+    <section className="bg-linear-to-b from-blue-50 to-white pb-20 ">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 px-4">
         <div className="text-center md:text-left md:w-1/2">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 leading-tight">
             Վստահություն կերտել յուրաքանչյուր գործարքի մեջ։

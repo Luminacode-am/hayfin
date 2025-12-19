@@ -35,7 +35,7 @@ const cards = [
 ];
 export default function Cards() {
   return (
-    <div className="flex gap-[50px] justify-center pb-[48px] flex-wrap">
+    <div className="max-w-7xl mx-auto flex gap-[50px] justify-center pb-[48px] flex-wrap px-4">
       {cards.map((card) => (
         <Card
           key={card.name}
