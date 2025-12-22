@@ -70,9 +70,9 @@ export default function Cards() {
               </p>
             </div>
 
-            <Button className="pt-[12px] pb-[12px] w-[312px] bg-[#0D7680] rounded-[12px]">
+            <button className="pt-[12px] pb-[12px] w-[312px] bg-[#0D7680] rounded-[12px] font-medium  text-white ">
               Sign up
-            </Button>
+            </button>
           </div>
         </Card>
       ))}
