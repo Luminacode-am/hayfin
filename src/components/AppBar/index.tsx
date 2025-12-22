@@ -5,7 +5,7 @@ export default function AppBar() {
     <Disclosure as="nav" className="bg-white shadow-xs top-0 inset-x-0 z-50">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
             <div className="flex sm:flex-row flex-col sm:justify-between justify-around h-32">
               {/* Logo */}
               <div className="flex items-center">
