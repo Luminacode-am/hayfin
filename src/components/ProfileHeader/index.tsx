@@ -1,10 +1,16 @@
 import { Disclosure } from '@headlessui/react';
+import { Menu } from 'lucide-react';
 
 
 export default function PHeader(){
+     function Burger(){
+        const items = ["Settings", "Contacts", "Notifications"];
+    }
     return(
         <Disclosure as="nav" className="bg-white shadow-xs">
-        {({ open }) => (    
+        {({ open }) => ( 
+            <>  
+            {/*Desktop*/}
          <header className="flex sm:justify-around">
               <div className="flex items-center">
                   <p className="text-xl">
@@ -13,12 +19,19 @@ export default function PHeader(){
               </div>
               <div className="flex items-center">
                   <ol className="text-lg gap-32px">
-                     <li className="text-cyan-600 hover:text-cyan-700 transition"><a href="#">Settings</a></li>
-                     <li className="text-cyan-600 hover:text-cyan-700 transition"><a href="#">Contacts</a></li>
-                     <li className="text-cyan-600 hover:text-cyan-700 transition"><a href="#">Notifications</a></li>
+                    {items?.map((item, index) => (
+                     <li key={index} className="text-cyan-600 hover:text-cyan-700 transition">
+                           <a href="#">
+                              {item}
+                          </a>
+                        </li>
+                    ))}
                   </ol>
               </div>
           </header>
+          
+
+          </> 
           )}
         </Disclosure>
     );
