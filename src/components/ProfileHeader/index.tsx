@@ -19,7 +19,6 @@ function PHeader(){
                   </ol>
               </div>
         )
-    Burger()
     }
     {/*Mobile vershion*/}
     function Dropdown(){
@@ -48,7 +47,6 @@ function PHeader(){
             </div>
         )
     }
-    Dropdown()
     }
 
     return(
@@ -77,5 +75,3 @@ function PHeader(){
         </Disclosure>
     );
 }
-
-PHeader()
