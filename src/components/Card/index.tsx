@@ -20,7 +20,7 @@ const Card: React.FC<CardProps> = ({
     <div
       key={key}
       className={clsx(className, baseStayles, {
-        'border-[#E6E6E6] border': border,
+        'border-light-border dark:border-dark-border border': border,
       })}
       {...props}
     >
