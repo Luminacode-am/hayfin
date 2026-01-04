@@ -2,7 +2,7 @@ import { Disclosure } from '@headlessui/react';
 import { Menu } from 'lucide-react';
 import { useState } from 'react';
 
-function PHeader(){
+export default function PHeader(){
     {/*Desktop vershion*/}
      function Burger(){
         const items = ["Settings", "Contacts", "Notifications"];
