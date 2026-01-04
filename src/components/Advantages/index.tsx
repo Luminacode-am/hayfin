@@ -36,7 +36,7 @@ export default function Advantages() {
           {cardsData.map((card) => (
             <Card
               key={card.name}
-              className="p-7 rounded-2xl bg-light-bg dark:bg-dark-bg max-w-[600px]"
+              className="p-7 rounded-2xl bg-light-bg dark:bg-dark-bg-primary max-w-[600px]"
             >
               <div className="flex items-center gap-3">
                 {card.icon}

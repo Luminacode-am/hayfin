@@ -18,7 +18,9 @@ export default function RegistrationForm() {
 
   return (
     <div className="w-96 p-6 rounded-2xl bg-light-bg dark:bg-dark-bg shadow-2xl shadow-light-shadow dark:shadow-dark-shadow m-auto">
-      <h2 className="text-2xl font-semibold mb-4 text-light-text dark:text-dark-text">Ստեղծել Հաշիվ</h2>
+      <h2 className="text-2xl font-semibold mb-4 text-light-text dark:text-dark-text">
+        Ստեղծել Հաշիվ
+      </h2>
 
       <div className="p-[14px] border mb-3 bg-light-btn dark:bg-dark-btn rounded-xl text-white">
         <Listbox value={selected} onChange={setSelected}>

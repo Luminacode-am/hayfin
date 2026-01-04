@@ -58,7 +58,9 @@ export default function Cards() {
                 </del>
               </span>
               <div>
-                <span className="text-[36px] font-[700] text-light-text dark:text-dark-text-primary">{card.sale}</span>
+                <span className="text-[36px] font-[700] text-light-text dark:text-dark-text-primary">
+                  {card.sale}
+                </span>
                 <span className="text-[18px] font-[500] text-light-text dark:text-dark-text-primary">
                   {card.time}
                 </span>

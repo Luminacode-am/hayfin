@@ -58,8 +58,8 @@ module.exports = {
             danger: 'oklch(57.7% 0.245 27.325)',
           },
           bg: {
-            DEFAULT: 'oklch(21% 0.034 264.665)',
-            primary: 'oklch(14.7% 0.004 49.25)',
+            DEFAULT: 'oklch(20.8% 0.042 265.755)',
+            primary: 'oklch(21% 0.034 264.665)',
             secondary: 'oklch(1 0 0)',
           },
           btn: {
