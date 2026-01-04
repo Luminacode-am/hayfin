@@ -27,7 +27,7 @@ const ButtonStyled: React.FC<ButtonProps> = ({
     'inline-flex items-center justify-center rounded-md font-medium';
   const colorStyles: Record<ButtonVariant, Record<ButtonColor, string>> = {
     filled: {
-      primary: 'bg-blue-600 text-white hover:bg-blue-700',
+      primary: 'bg-light-btn text-white hover:bg-light-btn-hover',
       secondary: 'bg-gray-600 text-white hover:bg-gray-700',
       danger: 'bg-red-600 text-white hover:bg-red-700',
     },
@@ -37,7 +37,7 @@ const ButtonStyled: React.FC<ButtonProps> = ({
       danger: 'border border-red-600 text-red-600 hover:bg-red-700',
     },
     text: {
-      primary: 'text-blue-600 hover:bg-blue-700 ',
+      primary: 'text-blue-600 hover:bg-blue-700',
       secondary: 'text-gray-600 hover:bg-gray-700',
       danger: 'text-red-600 hover:bg-red-700',
     },

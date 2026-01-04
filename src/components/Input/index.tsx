@@ -24,19 +24,25 @@ const inputProportion: React.FC<InputPops> = ({
 }) => {
   const inputStyles: Record<InputType, Record<InputTextColor, string>> = {
     number: {
-      gray: 'pl-3 pt-2 pb-2 pr-3 2xl text-gray-500 border border-gray-600 px-2',
-      white: 'pl-3 pt-2 pb-2 pr-3 2xl text-white border border-gray-600 px-2',
-      black: 'pl-3 pt-2 pb-2 pr-3 2xl text-black border border-gray-600 px-2',
+      gray: 'pl-3 pt-2 pb-2 pr-3 2xl text-light-text-primary dark:text-dark-text-primary border border-light-border-secondary dark:border-dark-border-secondary px-2',
+      white:
+        'pl-3 pt-2 pb-2 pr-3 2xl text-light-text-tertiary dark:text-dark-text-tertiary border border-light-border-secondary dark:border-dark-border-secondary px-2',
+      black:
+        'pl-3 pt-2 pb-2 pr-3 2xl text-light-text dark:text-dark-text border border-light-border-secondary dark:border-dark-border-secondary px-2',
     },
     email: {
-      gray: 'pl-3 pt-2 pb-2 pr-3 Xl text-gray-500 border border-gray-600 px-2',
-      white: 'pl-3 pt-2 pb-2 pr-3 Xl text-white border border-gray-600 px-2',
-      black: 'pl-3 pt-2 pb-2 pr-3 Xl text-black border border-gray-600 px-2',
+      gray: 'pl-3 pt-2 pb-2 pr-3 Xl text-light-text-primary dark:text-dark-text-primary border border-light-border-secondary dark:border-dark-border-secondary px-2',
+      white:
+        'pl-3 pt-2 pb-2 pr-3 Xl text-light-text-tertiary dark:text-dark-text-tertiary border border-light-border-secondary dark:border-dark-border-secondary px-2',
+      black:
+        'pl-3 pt-2 pb-2 pr-3 Xl text-light-text dark:text-dark-text border border-light-border-secondary dark:border-dark-border-secondary px-2',
     },
     password: {
-      gray: 'pl-3 pt-2 pb-2 pr-3 3xl text-gray-500 border border-gray-600 px-2',
-      white: 'pl-3 pt-2 pb-2 pr-3 3xl text-white border border-gray-600 px-2',
-      black: 'pl-3 pt-2 pb-2 pr-3 3xl text-black border border-gray-600 px-2',
+      gray: 'pl-3 pt-2 pb-2 pr-3 3xl text-light-text-primary dark:text-dark-text-primary border border-light-border-secondary dark:border-dark-border-secondary px-2',
+      white:
+        'pl-3 pt-2 pb-2 pr-3 3xl text-light-text-tertiary dark:text-dark-text-tertiary border border-light-border-secondary dark:border-dark-border-secondary px-2',
+      black:
+        'pl-3 pt-2 pb-2 pr-3 3xl text-light-text dark:text-dark-text border border-light-border-secondary dark:border-dark-border-secondary px-2',
     },
   };
 
@@ -48,7 +54,9 @@ const inputProportion: React.FC<InputPops> = ({
 
   return (
     <>
-      <Label className="font-medium text-white">{type}</Label>
+      <Label className="font-medium text-light-text-tertiary dark:text-dark-text-tertiary">
+        {type}
+      </Label>
       <Description className="">Please write yours {type}</Description>
       <Input
         className={clsx(
