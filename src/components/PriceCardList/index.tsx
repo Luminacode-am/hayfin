@@ -39,38 +39,40 @@ export default function Cards() {
       {cards.map((card) => (
         <Card
           key={card.name}
-          className="flex flex-col justify-between max-h-[415px]  "
+          className="flex flex-col justify-between max-h-[415px] bg-light-bg dark:bg-dark-bg-primary"
           width={'360px'}
         >
-          <div className="max-w-[360px] max-h-[415px] pt-[32px] pl-[24px]  pr-[24px]  pb-[24px]">
+          <div className="max-w-[360px] max-h-[415px] pt-[32px] pl-[24px] pr-[24px] pb-[24px] rounded-[12px]">
             <>
-              <h2 className="text-[20px] font-[600] text-[#0D7680]">
+              <h2 className="text-[20px] font-[600] text-light-link">
                 {card.name}
               </h2>
-              <p className="text-[18px] font-[500] text-[#737373]">
+              <p className="text-[18px] font-[500] text-light-text dark:text-dark-text-primary">
                 {card.status}
               </p>
             </>
             <div className="pb-[32px] pt-[32px] ">
               <span>
-                <del className="text-[24px] font-[700] text-[#737373]">
+                <del className="text-[24px] font-[700] text-light-text dark:text-dark-text-primary">
                   {card.price}
                 </del>
               </span>
               <div>
-                <span className="text-[36px] font-[700]">{card.sale}</span>
-                <span className="text-[18px] font-[500] text-[#737373]">
+                <span className="text-[36px] font-[700] text-light-text dark:text-dark-text-primary">
+                  {card.sale}
+                </span>
+                <span className="text-[18px] font-[500] text-light-text dark:text-dark-text-primary">
                   {card.time}
                 </span>
               </div>
             </div>
             <div className="pb-[32px] w-[200px]">
-              <p className=" text-[18px] font-[500] w-[195px]">
+              <p className=" text-[18px] font-[500] w-[195px] text-light-text dark:text-dark-text-primary">
                 {card.services}
               </p>
             </div>
 
-            <button className="pt-[12px] pb-[12px] w-[312px] bg-[#0D7680] rounded-[12px] font-medium  text-white ">
+            <button className="pt-[12px] pb-[12px] w-[312px] bg-light-btn rounded-[12px] font-medium  text-light-text-tertiary">
               Sign up
             </button>
           </div>
