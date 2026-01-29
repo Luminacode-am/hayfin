@@ -35,7 +35,7 @@ const cards = [
 ];
 export default function Cards() {
   return (
-    <div className="flex gap-[50px] justify-center pb-[48px] flex-wrap">
+    <div className="max-w-7xl mx-auto flex gap-[50px] justify-center pb-[48px] flex-wrap px-4">
       {cards.map((card) => (
         <Card
           key={card.name}
@@ -70,9 +70,9 @@ export default function Cards() {
               </p>
             </div>
 
-            <Button className="pt-[12px] pb-[12px] w-[312px] bg-[#0D7680] rounded-[12px]">
+            <button className="pt-[12px] pb-[12px] w-[312px] bg-[#0D7680] rounded-[12px] font-medium  text-white ">
               Sign up
-            </Button>
+            </button>
           </div>
         </Card>
       ))}

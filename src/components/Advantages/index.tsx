@@ -11,20 +11,20 @@ const cardsData = [
   {
     name: 'Վերահսկեք ձեր ֆինանսները մեկ վայրում։',
     description:
-    'Դուք կարող եք հետևել ծախսերին, պլանավորել ձեր բյուջեն և գումարը խնայել առանց բարդ հաշվարկների։',
+      'Դուք կարող եք հետևել ծախսերին, պլանավորել ձեր բյուջեն և գումարը խնայել առանց բարդ հաշվարկների։',
     icon: <Diamond size={18} />,
   },
   {
     name: 'Անվտանգություն և վստահություն',
     description:
-    'Բոլոր տվյալները գաղտնի են պահվում, կայքը պաշտպանում է ձեր անձնական տեղեկությունները։',
+      'Բոլոր տվյալները գաղտնի են պահվում, կայքը պաշտպանում է ձեր անձնական տեղեկությունները։',
     icon: <Triangle size={18} />,
   },
 ];
 
 export default function Advantages() {
   return (
-    <div className="max-w-7xl  mx-auto py-12 px-6">
+    <div className="max-w-7xl mx-auto py-12 px-4">
       <div className="flex flex-col md:flex-row   md:justify-between gap-12">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-12">
           <h1 className="text-4xl  font-medium text-slate-950">
@@ -34,7 +34,10 @@ export default function Advantages() {
 
         <div className="w-full flex flex-col gap-6 ">
           {cardsData.map((card) => (
-            <Card key={card.name} className="p-7  rounded-2xl bg-slate-100 ">
+            <Card
+              key={card.name}
+              className="p-7 rounded-2xl bg-slate-100 max-w-[600px]"
+            >
               <div className="flex items-center gap-3">
                 {card.icon}
                 <h3 className=" font-medium  text-2xl text-neutral-950 ">
