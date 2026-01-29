@@ -18,11 +18,7 @@ export default function Hero() {
         </div>
 
         <div className="md:w-1/2 flex justify-center">
-          <img
-            src={heroImage}
-            alt="Finance illustration"
-            className="w-full max-w-md h-auto"
-          />
+          <img src={heroImage} alt="Finance illustration" className="w-full max-w-md h-auto" />
         </div>
       </div>
     </section>
