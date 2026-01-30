@@ -26,12 +26,12 @@ const cards = [
 ];
 export default function Cards() {
   return (
-    <div className="flex gap-[50px] justify-center pb-[48px] bg-light-bg dark:bg-dark-bg">
+    <div className="flex gap-[50px] justify-center pb-[48px] bg-light-bg dark:bg-dark-bg flex-wrap">
       {cards.map((card) => (
         <Card
           key={card.name}
-          className="flex flex-col bg-light-bg dark:bg-dark-bg justify-between"
-          width={'336px'}
+          className="flex flex-col bg-light-bg dark:bg-dark-bg justify-between w-[382px]"
+          width={'382px'}
         >
           <div className="pt-[32px] pr-[32px] pl-[32px]">
             <p className=" font-medium text-lg text-light-text dark:text-dark-text">
