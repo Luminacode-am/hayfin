@@ -5,6 +5,7 @@ import LoginScreen from '../components/LoginScreen/LoginScreen';
 import PartnersList from '../components/PartnersList';
 import PriceCardList from '../components/PriceCardList';
 import Advantages from '../components/Advantages';
+import MyAccount  from '../pages/MyAccount';
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <AppBar />
       <main className="flex-grow">
         <LoginScreen />
+        <MyAccount/>
         <Hero />
         <Advantages />
         <PriceCardList />
