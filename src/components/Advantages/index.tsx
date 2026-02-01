@@ -6,19 +6,19 @@ const cardsData = [
     name: 'Հարմար և հեշտ օգտագործվող համակարգ',
     description:
       'Յուրաքանչյուր ոք կարող է արագ պարզել, թե ինչպես օգտվել կայքից ՝ Պարզ դիզայն, հայկական ինտերֆեյս և արագ արձագանք:',
-    icon: <Circle size={18} />,
+    icon: <Circle className="dark:stroke-dark-border" size={18} />,
   },
   {
     name: 'Վերահսկեք ձեր ֆինանսները մեկ վայրում։',
     description:
       'Դուք կարող եք հետևել ծախսերին, պլանավորել ձեր բյուջեն և գումարը խնայել առանց բարդ հաշվարկների։',
-    icon: <Diamond size={18} />,
+    icon: <Diamond className="dark:stroke-dark-border" size={18} />,
   },
   {
     name: 'Անվտանգություն և վստահություն',
     description:
       'Բոլոր տվյալները գաղտնի են պահվում, կայքը պաշտպանում է ձեր անձնական տեղեկությունները։',
-    icon: <Triangle size={18} />,
+    icon: <Triangle className="dark:stroke-dark-border" size={18} />,
   },
 ];
 

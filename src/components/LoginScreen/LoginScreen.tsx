@@ -209,39 +209,50 @@ const LoginScreen: React.FC = () => {
       setLoading(false);
     }
   };
-
   // CSS classes for consistent styling.
   // CSS դասեր՝ միասնական ոճի համար։
-  const commonInputClasses = "w-full p-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 shadow-sm";
-  const commonButtonClasses = "w-full p-3 font-semibold rounded-lg shadow-md transition duration-150 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed";
+  const commonInputClasses = "w-full p-3 mb-4 rounded-lg border border-light-border dark:border-dark-border bg-light-bg text-light-text focus:outline-none focus:ring-2 focus:ring-btn focus:border-btn transition duration-150 shadow-sm";
+
+  const commonButtonClasses = "w-full p-3 font-semibold rounded-lg bg-light-btn dark:bg-dark-btn text-light-text dark:text-dark-text hover:bg-btn-hover active:bg-light-btn-active dark:active:bg-dark-btn-active shadow-md transition duration-150 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed";
 
   const isSendDisabled = loading || phoneNumber.length < 8;
 
   // --- RENDER / ՆԿԱՐՈՒՄ ---
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50">
-      <div className="w-full max-w-md p-8 m-4 bg-white rounded-xl shadow-2xl border border-gray-100">
-        <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-6">
+    <div className="flex items-center justify-center min-h-screen bg-light-bg dark:bg-dark-bg">
+      <div className="w-full max-w-md p-8 m-4 bg-light-bg dark:bg-dark-bg rounded-xl shadow-lg dark:shadow-dark-shadow">
+        <h2 className="text-3xl font-extrabold text-light-text dark:text-dark-text text-center mb-6">
           Մուտք հեռախոսահամարով
         </h2>
 
         {/* Conditional Rendering: Show error if it exists */}
         {/* Պայմանական Նկարում. Ցույց տալ սխալը, եթե այն գոյություն ունի */}
         {error && (
-          <div className="p-3 mb-4 text-sm text-red-700 bg-red-100 rounded-lg" role="alert">
+          <div
+            className="p-3 mb-4 text-sm font-semibold text-light-text-danger bg-light-bg border border-light-border rounded-lg"
+            role="alert"
+          >
             {error}
           </div>
         )}
 
         {/* Logic: If we don't have a confirmation result yet, show Phone Input form.
-          Else, show Code Verification form.
+            Else, show Code Verification form.
 
-          Տրամաբանություն. Եթե դեռ չունենք հաստատման արդյունք, ցույց տալ Հեռախոսի Մուտքագրման ֆորման։
-          Հակառակ դեպքում, ցույց տալ Կոդի Ստուգման ֆորման։
+            Տրամաբանություն. Եթե դեռ չունենք հաստատման արդյունք, ցույց տալ Հեռախոսի Մուտքագրման ֆորման։
+            Հակառակ դեպքում, ցույց տալ Կոդի Ստուգման ֆորման։
         */}
         {!confirmationResult ? (
-          <form onSubmit={(e) => { e.preventDefault(); handleSendCode(); }}>
-            <p className="text-sm text-gray-600 mb-3">Մուտքագրեք Ձեր հեռախոսահամարը (օրինակ՝ +374...).</p>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleSendCode();
+            }}
+          >
+            <p className="text-sm text-light-text-secondary dark:text-dark-text-secondary mb-3">
+              Մուտքագրեք Ձեր հեռախոսահամարը (օրինակ՝ +374...).
+            </p>
+
             <input
               type="tel"
               placeholder="+374XXXXXXXX"
@@ -253,7 +264,7 @@ const LoginScreen: React.FC = () => {
             />
 
             {/* IMPORTANT: The invisible reCAPTCHA needs this empty div to attach to.
-               ԿԱՐԵՎՈՐ: Անտեսանելի reCAPTCHA-ին անհրաժեշտ է այս դատարկ div-ը՝ կցվելու համար։
+                ԿԱՐԵՎՈՐ: Անտեսանելի reCAPTCHA-ին անհրաժեշտ է այս դատարկ div-ը՝ կցվելու համար։
             */}
             <div id="recaptcha-container" className="mt-4 mb-4"></div>
 
@@ -261,14 +272,22 @@ const LoginScreen: React.FC = () => {
               type="submit"
               onClick={handleSendCode}
               disabled={isSendDisabled}
-              className={`${commonButtonClasses} bg-indigo-600 text-white hover:bg-indigo-700`}
+              className={commonButtonClasses}
             >
-              {loading ? 'Ուղարկում...' : 'Ստանալ կոդը'}
+              {loading ? "Ուղարկում..." : "Ստանալ կոդը"}
             </button>
           </form>
         ) : (
-          <form onSubmit={(e) => { e.preventDefault(); handleVerifyCode(); }}>
-            <p className="text-sm text-gray-600 mb-3">Հաստատման կոդն ուղարկված է։ Մուտքագրեք այն ներքևում։</p>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleVerifyCode();
+            }}
+          >
+            <p className="text-sm text-light-text-secondary mb-3">
+              Հաստատման կոդն ուղարկված է։ Մուտքագրեք այն ներքևում։
+            </p>
+
             <input
               type="text"
               placeholder="XXXXXX"
@@ -279,21 +298,25 @@ const LoginScreen: React.FC = () => {
               maxLength={6}
               disabled={loading}
             />
+
             <button
               type="submit"
               onClick={handleVerifyCode}
               disabled={loading || verificationCode.length !== 6}
-              className={`${commonButtonClasses} bg-green-600 text-white hover:bg-green-700`}
+              className={commonButtonClasses}
             >
-              {loading ? 'Ստուգում...' : 'Հաստատել և մուտք գործել'}
+              {loading ? "Ստուգում..." : "Հաստատել և մուտք գործել"}
             </button>
 
             {/* Button to go back to phone entry */}
             {/* Կոճակ՝ հեռախոսի մուտքագրմանը վերադառնալու համար */}
             <button
               type="button"
-              onClick={() => { setConfirmationResult(null); setVerificationCode(''); }}
-              className="mt-3 w-full p-3 text-sm text-indigo-600 hover:text-indigo-800 bg-transparent"
+              onClick={() => {
+                setConfirmationResult(null);
+                setVerificationCode("");
+              }}
+              className="mt-3 w-full p-3 text-sm text-light-link hover:text-light-link-hover active:text-light-link-active bg-transparent"
             >
               Փոխել հեռախոսահամարը
             </button>

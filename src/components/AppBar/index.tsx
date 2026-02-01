@@ -1,5 +1,4 @@
 import { Disclosure } from '@headlessui/react';
-import RegistrationForm from '../RegForm';
 
 export default function AppBar() {
   return (
