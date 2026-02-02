@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './pages/App';
+import ErrorApp from './pages/ErrorApp';
 import reportWebVitals from './reportWebVitals';
 import { AuthProvider } from "./firebase/AuthContext";
 
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <AuthProvider>
-    <App />
+     <ErrorApp />
+       <App />
+     <ErrorApp />  
     </AuthProvider>
   </React.StrictMode>
 );
